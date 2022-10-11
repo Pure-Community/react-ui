@@ -1,3 +1,13 @@
+## [1.0.4] - 2022-10-11
+
+### Added
+
+-   Developer mail in description
+
+### Fixed
+
+-   Set declarations file in package.json
+
 ## [1.0.3] - 2022-10-11
 
 ### Added
