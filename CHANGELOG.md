@@ -1,3 +1,9 @@
+## [1.0.2] - 2022-10-11
+
+### Fixed
+
+-   Entry point filenames
+
 ## [1.0.1] - 2022-10-11
 
 ### Added
