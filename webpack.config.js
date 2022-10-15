@@ -38,18 +38,19 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        filename: 'bundle.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
+        libraryTarget: 'umd',
+        // pathinfo: false,
     },
-    optimization: {
-        runtimeChunk: true,
-    },
-    optimization: {
-        removeAvailableModules: false,
-        removeEmptyChunks: false,
-        splitChunks: false,
-    },
-    output: {
-        pathinfo: false,
-    },
+    // optimization: {
+    //     removeAvailableModules: false,
+    //     removeEmptyChunks: false,
+    //     splitChunks: false,
+    //     runtimeChunk: true,
+    // },
+    externals: {
+        react: 'react'
+    }
 }

@@ -2,13 +2,23 @@
   "name": "@pureman/react-ui",
   "description": "Pure Community UI library for React",
   "author": "Pure Community <pureman.official@gmail.com>",
-  "keywords": ["react", "components", "ui"],
-  "version": "0.1.4",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "license": "MIT",
+  "version": "0.1.5",
   "private": false,
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "module": "./dist/main.js",
-  "files": ["dist/", "README.md", "CHANGELOG.md", "LICENSE.md"],
+  "module": "./dist/index.js",
+  "files": [
+    "dist/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pure-Community/react-ui"
@@ -36,6 +46,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npx webpack --config webpack.config.js",
+    "build-local": "npm pack --pack-destination ../",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,3 +1,13 @@
+## [1.0.5] - 2022-10-11
+
+### Added
+
+-   License field
+
+### Changed
+
+-   Webpack entry file
+
 ## [1.0.4] - 2022-10-11
 
 ### Added
