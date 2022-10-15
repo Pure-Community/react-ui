@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
     entry: './src/index.tsx',
+    mode: 'production',
     devtool: 'inline-source-map',
     module: {
         rules: [
@@ -9,9 +10,6 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: {
                     loader: 'ts-loader',
-                    options: {
-                        transpileOnly: true,
-                    },
                 },
                 exclude: /node_modules/,
             },
@@ -40,18 +38,19 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        filename: 'bundle.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
+        libraryTarget: 'umd',
+        // pathinfo: false,
     },
-    optimization: {
-        runtimeChunk: true,
-    },
-    optimization: {
-        removeAvailableModules: false,
-        removeEmptyChunks: false,
-        splitChunks: false,
-    },
-    output: {
-        pathinfo: false,
-    },
+    // optimization: {
+    //     removeAvailableModules: false,
+    //     removeEmptyChunks: false,
+    //     splitChunks: false,
+    //     runtimeChunk: true,
+    // },
+    externals: {
+        react: 'react'
+    }
 }
