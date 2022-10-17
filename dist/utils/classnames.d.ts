@@ -1,2 +1,2 @@
-declare const createElementClassNameFactory: (blockClassName: String) => (elementClassName: String) => string;
+declare const createElementClassNameFactory: (blockClassName: string) => ((className: string) => string)[];
 export { createElementClassNameFactory };
