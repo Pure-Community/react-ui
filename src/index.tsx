@@ -1,6 +1,7 @@
 import { Button } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.scss'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -8,6 +9,14 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Button title='button' />
+    <div className='app__block'>
+      <h2>Buttons</h2>
+      <Button title='button' />
+      <Button title='button' type='outlined' />
+      <Button title='button' type='outlined' rounded />
+      <Button title='button' type='text' rounded />
+      <Button title='button' type='outlined' rounded labelType='capitalize' />
+      <Button title='button' type='outlined' rounded labelType='capitalize' short />
+    </div>
   </React.StrictMode>
 );

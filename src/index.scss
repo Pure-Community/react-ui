@@ -1,0 +1,21 @@
+.app {
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        & > *:not(:first-child) {
+            margin-top: 8px;
+        }
+
+        margin-bottom: 32px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        padding: 16px;
+        background-color: rgb(240, 240, 255);
+    }
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray
+}
