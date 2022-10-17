@@ -1,3 +1,11 @@
+## [1.0.6] - 2022-10-11
+
+### Added
+
+-   SCSS loaders to webpack configuration
+-   Styles for button
+-   Style constants
+
 ## [1.0.5] - 2022-10-11
 
 ### Added

@@ -1,4 +1,4 @@
-import { Button } from 'components';
+import { Button } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
