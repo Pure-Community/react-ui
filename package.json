@@ -8,7 +8,7 @@
     "ui"
   ],
   "license": "MIT",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -36,6 +36,7 @@
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "^4.8.4",
     "webpack-cli": "^4.10.0"
   },
@@ -46,7 +47,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npx webpack --config webpack.config.js",
-    "build-local": "npm pack --pack-destination ../",
+    "pack": "npm pack --pack-destination ../../",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

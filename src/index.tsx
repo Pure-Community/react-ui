@@ -1,3 +1,12 @@
 import { Button } from './components';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-export { Button }
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <Button title='button' />
+  </React.StrictMode>
+);
