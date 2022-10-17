@@ -9,8 +9,6 @@ class ClassNamesGenerator {
     }
 
     public getBlockCN(...modificators: string[]) {
-        console.log(this.style[this.blockCN]);
-        
         if (!modificators) return this.style[this.blockCN]
         else return [this.style[this.blockCN]]
         .concat(modificators
