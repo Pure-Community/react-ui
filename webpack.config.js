@@ -13,25 +13,25 @@ module.exports = {
                 },
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.s[ac]ss$/i,
-            //     use: [
-            //         // Creates `style` nodes from JS strings
-            //         'style-loader',
-            //         // Translates CSS into CommonJS
-            //         'css-loader',
-            //         // Compiles Sass to CSS
-            //         {
-            //             loader: 'sass-loader',
-            //             options: {
-            //                 sassOptions: {
-            //                     sourceMap: true,
-            //                     includePaths: [path.resolve(__dirname, './src/styles/')],
-            //                 },
-            //             },
-            //         },
-            //     ],
-            // },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                sourceMap: true,
+                                includePaths: [path.resolve(__dirname, './src/styles/')],
+                            },
+                        },
+                    },
+                ],
+            },
         ],
     },
     resolve: {
@@ -51,6 +51,6 @@ module.exports = {
     //     runtimeChunk: true,
     // },
     externals: {
-        react: 'react'
-    }
+        react: 'react',
+    },
 }

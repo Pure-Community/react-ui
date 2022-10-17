@@ -1,0 +1,23 @@
+@import 'styles/colors';
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    height: 36px;
+    background: $colorPrimary;
+    color: $colorOnSurface;
+    border: none;
+    border-radius: 4px;
+
+    &__label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+
+    
+}
