@@ -1,5 +1,6 @@
 ### Todo
 
+-   [ ] Add tests `2022-10-18`
 -   [ ] Add global css/scss vars setup for override color scheme `2022-10-17`
 -   [ ] Check global fonts for components `2022-10-17`
 
