@@ -1,3 +1,9 @@
+## [1.0.8] - 2022-10-17
+
+### Changed
+
+-   Classnames getting
+
 ## [1.0.7] - 2022-10-17
 
 ### Button component
