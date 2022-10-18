@@ -1,5 +1,6 @@
 @import '/src/styles/colors';
 @import '/src/styles/effects';
+@import '/src/styles/typography';
 
 .button {
     display: flex;
@@ -48,9 +49,7 @@
     }
 
     &__label {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
+        @include buttonLabel();
 
         &_capitalize {
             text-transform: capitalize;
