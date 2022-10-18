@@ -1,3 +1,5 @@
+@import './styles/colors';
+
 .app {
     &__block {
         display: flex;
@@ -11,7 +13,7 @@
         border: 1px solid rgb(204, 204, 204);
         border-radius: 4px;
         padding: 16px;
-        background-color: rgb(240, 240, 255);
+        background-color: $colorSurface;
     }
 }
 html {

@@ -21,14 +21,15 @@ const Input: FC<InputProps> = ({
     const resolveFieldMods = () => {
         let mods = []
         if (errorMessage) mods.push('error')
+        if (!value && !errorMessage) mods.push('empty')
         return mods
     }
 
     return (
         <div className={cnGetter.getBlockCN()}>
-            {label ? <label className={cnGetter.getElementCN('label')} htmlFor={id}>{label}</label> : null}
             <input className={cnGetter.getElementCN('field', ...resolveFieldMods())} id={id} value={value} onChange={onChange}></input>
             {errorMessage ? <p className={cnGetter.getElementCN('error-message')}>{errorMessage}</p> : null}
+            {label ? <label className={cnGetter.getElementCN('label', ...resolveFieldMods())} htmlFor={id}>{label}</label> : null}
         </div>
     )
 }
