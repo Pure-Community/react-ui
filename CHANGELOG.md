@@ -1,3 +1,13 @@
+## Changes
+
+### Added
+
+-   Input component
+
+### Changed
+
+-   Classnames getting
+
 ## [1.0.8] - 2022-10-17
 
 ### Changed
