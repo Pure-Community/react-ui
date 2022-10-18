@@ -46,4 +46,4 @@ const Button: FC<ButtonProps> = ({
 }
 
 export default Button
-
+export type { ButtonType, LabelType }
