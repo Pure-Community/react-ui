@@ -1,4 +1,4 @@
-import { Button } from './components';
+import { Button, Input } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss'
@@ -17,6 +17,11 @@ root.render(
       <Button title='button' type='text' rounded />
       <Button title='button' type='outlined' rounded labelType='capitalize' />
       <Button title='button' type='outlined' rounded labelType='capitalize' short />
+    </div>
+    <div className='app__block'>
+      <h2>Inputs</h2>
+      <Input label='label' />
+      <Input label='label' errorMessage='error' />
     </div>
   </React.StrictMode>
 );

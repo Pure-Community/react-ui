@@ -1,6 +1,9 @@
 interface ClickableElement {
     onClick?: ((event: React.MouseEvent<HTMLElement>) => void) | (() => void)
-
 }
 
-export type {ClickableElement}
+interface ChangableElement {
+    onChange?: ((event: React.ChangeEvent<HTMLInputElement>) => void) | (() => void)
+}
+
+export type {ClickableElement, ChangableElement}
