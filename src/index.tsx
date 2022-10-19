@@ -1,4 +1,4 @@
-import { Button, H1, H2, H3, H4, H5, H6 } from './components';
+import { Button, H1, H2, H3, H4, H5, H6, Input } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss'
@@ -17,6 +17,11 @@ root.render(
       <Button title='button' type='text' rounded />
       <Button title='button' type='outlined' rounded labelType='capitalize' />
       <Button title='button' type='outlined' rounded labelType='capitalize' short />
+    </div>
+    <div className='app__block'>
+      <h2>Inputs</h2>
+      <Input label='label' />
+      <Input label='label' errorMessage='error' />
     </div>
     <div className="app__block">
       <H1>heading 1</H1>

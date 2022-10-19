@@ -3,3 +3,9 @@
         transition: all .1s ease-in;
     }
 }
+
+@mixin inputLabelTransition() {
+    & {
+        transition: all .1s cubic-bezier(.22, .61, .36, 1);
+    }
+}
