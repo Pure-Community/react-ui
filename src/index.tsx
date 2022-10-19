@@ -1,4 +1,4 @@
-import { Button, Input } from './components';
+import { Button, H1, H2, H3, H4, H5, H6, Input } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss'
@@ -22,6 +22,14 @@ root.render(
       <h2>Inputs</h2>
       <Input label='label' />
       <Input label='label' errorMessage='error' />
+    </div>
+    <div className="app__block">
+      <H1>heading 1</H1>
+      <H2>heading 2</H2>
+      <H3>heading 3</H3>
+      <H4>heading 4</H4>
+      <H5>heading 5</H5>
+      <H6>heading 6</H6>
     </div>
   </React.StrictMode>
 );

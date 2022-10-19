@@ -1,5 +1,6 @@
 const path = require('path')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 module.exports = {
     entry: './src/main.ts',
@@ -39,6 +40,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
         plugins: [new TsconfigPathsPlugin()],
     },
+    plugins: [new BundleAnalyzerPlugin()],
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
