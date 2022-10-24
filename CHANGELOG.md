@@ -1,5 +1,11 @@
 ## [0.2.0] - 2022-10-19
 
+### Fixed
+
+-   Entry point
+
+## [0.2.0] - 2022-10-19
+
 ### Added
 
 -   Input component
